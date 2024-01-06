@@ -1,0 +1,33 @@
+Transaction:
+  ->Debit : boolean
+  ->Credit : boolean
+  ->Amount : float
+  ->Comments : string
+  ->date : date
+  ->tags : string list
+  ->Bank+Acc: string
+
+Day:
+  ->Day : string
+  ->Month : string
+  ->Year : string
+  ->TotalTransactions : List of Transaction
+  ->TotalCredit : float
+  ->TotalDebit : float
+
+Month:
+  ->Month : string
+  ->Year : string
+  ->Days : List
+  ->TotalCredit : float
+  ->TotalDebit : float
+  ->SavingGoal : float
+  
+Year:
+  ->Months : List
+  ->TotalCredit : float
+  ->TotalDebit : float
+  ->SavingGoal : float
+  
+  
+Years : list of Year
